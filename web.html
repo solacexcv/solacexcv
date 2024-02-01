@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2b2b2b;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .menu-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            display: inline-block;
+            padding: 0.5em;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .banner {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .overlay h3 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .overlay p {
+            margin: 0;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .overlay a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent; /* Add this line to remove underline */
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .second-banner {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .second-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        .second-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .second-overlay h3 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .second-overlay p {
+            margin: 0;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .second-overlay a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent; /* Add this line to remove underline */
+        }
+
+        @media (max-width: 768px) {
+            .menu-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #2b2b2b;
+            }
+
+            .menu-links.show {
+                display: flex;
+            }
+
+            .menu-links a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-icon {
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Add your content here -->
+
+        <!-- Add the first image with overlay -->
+        <div class="banner">
+            <a href="https://github.com/solacexcv/SMS-Spam" target="_blank">
+                <img src="https://raw.githubusercontent.com/solacexcv/SMS-Spam/main/banner.png" alt="My Website">
+            </a>
+            <div class="overlay">
+                <h3><a href="https://github.com/solacexcv/SMS-Spam" target="_blank" style="text-decoration: none; color: #fff;">The Best SMS Spammer</a></h3>
+                <p>February 1, 2024</p>
+            </div>
+        </div>
+
+        <!-- Add the first caption -->
+        <div class="caption">
+            <p>SMS-Spam is a tool that can flood someone's SMS or number, allowing you to spam SMS messages. This tool is tested in the Philippines, and its effectiveness in other countries is not guaranteed.</p>
+        </div>
+
+        <!-- Add the second image with overlay -->
+        <div class="second-banner">
+            <a href="https://github.com/solacexcv/IP-GRAB" target="_blank">
+                <img src="https://raw.githubusercontent.com/solacexcv/IP-GRAB/main/ipbanner.png" alt="My Website">
+            </a>
+            <div class="second-overlay">
+                <h3><a href="https://github.com/solacexcv/IP-GRAB" target="_blank" style="text-decoration: none; color: #fff;">Grab The Victim Ip Address</a></h3>
+                <p>February 1, 2024</p>
+            </div>
+        </div>
+
+        <!-- Add the second caption -->
+        <div class="caption">
+            <p>IP-GRAB, This Tool Can Generate a Link That Can Grab an IP. If the victim opens the link, you will get the IP of the victim. Wait for 20 to 30 seconds to get the full info of the particular IP.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
